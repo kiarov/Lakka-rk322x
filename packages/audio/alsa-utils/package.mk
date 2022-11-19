@@ -30,12 +30,10 @@ post_makeinstall_target() {
 # so we avoid resetting our soundconfig
   rm -rf ${INSTALL}/usr/lib/udev/rules.d/90-alsa-restore.rules
 
-  if [ "${DISTRO}" != "Lakka" ]; then # keep the utils for Lakka
-    mkdir -p ${INSTALL}/.noinstall
-      for i in aconnect alsamixer amidi aplaymidi arecord arecordmidi aseqdump aseqnet iecset; do
-        mv ${INSTALL}/usr/bin/${i} ${INSTALL}/.noinstall
-      done
-  fi
+  mkdir -p ${INSTALL}/.noinstall
+  for i in aconnect alsamixer amidi aplaymidi arecord arecordmidi aseqdump aseqnet iecset; do
+    mv ${INSTALL}/usr/bin/${i} ${INSTALL}/.noinstall
+  done
 
   mkdir -p ${INSTALL}/usr/lib/udev
     cp ${PKG_DIR}/scripts/soundconfig ${INSTALL}/usr/lib/udev
