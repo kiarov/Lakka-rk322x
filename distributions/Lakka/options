@@ -182,7 +182,6 @@
 
 # List of libretro cores
   LIBRETRO_CORES="\
-                  2048 \
                   81 \
                   a5200 \
                   atari800 \
@@ -216,17 +215,11 @@
                   desmume \
                   desmume_2015 \
                   dinothawr \
-                  dolphin \
-                  dosbox \
-                  dosbox_pure \
-                  dosbox_svn \
-                  easyrpg \
                   emux_sms\
                   ecwolf \
                   fbalpha2012 \
                   fbneo \
                   fceumm \
-                  flycast \
                   fmsx \
                   freechaf \
                   freeintv \
@@ -269,7 +262,6 @@
                   openlara \
                   opera \
                   parallel_n64 \
-                  pcsx2 \
                   pcsx_rearmed \
                   picodrive \
                   play \
@@ -290,7 +282,6 @@
                   same_cdi \
                   sameboy \
                   sameduck \
-                  scummvm \
                   snes9x \
                   snes9x2002 \
                   snes9x2005 \
@@ -303,14 +294,12 @@
                   tgbdual \
                   theodore \
                   tic80 \
-                  tyrquake \
                   uae4arm \
                   uzem \
                   vbam \
                   vecx \
                   vice \
                   virtualjaguar \
-                  vitaquake3 \
                   wasm4 \
                   xmil \
                   xrick \
